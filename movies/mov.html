@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("http://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+        body {
+            background:lightslategray;
+        }
+
+        .movies {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .movies li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            background: #272727;
+        }
+
+        .movies li img {
+            max-width: 300px;
+            border-radius: 12px;
+        }
+
+        .movies li h2 {
+            color: #fff;
+            font-size: 1.8em;
+            padding: 15px 10px 0;
+            margin-top: auto;
+            font-family: "Oswald", sans-serif;
+        }
+
+        .sbox {
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            height: 30px;
+        }
+
+       
+        .getvalue {
+            background-color: blue;
+            color: white;
+            height: 45px;
+            width: 90px;
+            margin: 5px;
+            padding: 9px;
+        }
+
+        .getvalue:hover {
+            color: blue;
+            background-color: white;
+            border-radius: 32px;
+        }
+
+        #reload {
+            background-color: red;
+            color: white;
+            height: 45px;
+            margin: 5px;
+            padding: 9px;
+        }
+
+        #reload:hover {
+            color: red;
+            background-color: white;
+            border-radius: 32px;
+            transition: ease-in;
+
+        }
+
+        #para {
+            font-family: "Oswald", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Search Movies,Actors,Awards..." id="inputId" class="sbox">
+
+
+
+
+
+
+   <!-- // Get Value Button -->
+    <button type="button" onclick="getInputValue();" class="getvalue">Get Value</button>
+    
+
+   
+
+
+
+
+
+
+    <button onClick="window.location.reload();" id="reload">Clear Old Results</button>
+    <p id="para">
+    <ul>
+        <h3>INSTRUCTIONS</h3>
+        <li>First Write Your Query In Above Search Box</li>
+        <li>Then Click On Get Value Button</li>
+        <li>Then Click On Search Button, You Will Get Your Results</li>
+        <li>*Make Sure You Click On RED Button Before Searching New Query</li>
+    </ul>
+    </p>
+    <div class="movies">
+    </div>
+    <script src="./mov.js">
+    </script>
+</body>
+
+</html>

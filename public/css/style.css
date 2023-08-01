@@ -1,0 +1,36 @@
+/* *{
+    background-color: black;
+    color: white;
+} */
+
+.slider-image{
+    
+    height: 600px!important;
+    /* width: 400px!important; */
+    object-fit: cover;
+}
+.img-cpt{
+    /* background-color: black; */
+    color: blue;
+}
+.service_icon{
+    font-size: 90px;
+}
+.background1{
+    background-color: black;
+color: white;
+background-attachment: fixed;
+background-size: cover;
+}
+.navu{
+    background-color: black;
+}
+.servi:hover{
+ background-color: black;
+ width:400px;
+ height: 300px;
+ /* transition: width 1s, height 1s; */
+ border-radius: 9px;
+ color: white;
+ 
+}

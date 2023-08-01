@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter Your Details!  We Will Contact You</h2>
+    <form action="/register" method="POST" id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+        <br>
+
+        <label>
+            <span>Male</span>
+            <input type="radio" name="gender" value="Male" checked>
+            <input type="radio" name="gender" value="female" >
+            <span>Female</span>
+        </label>
+        <br>
+
+        <label>
+            <span>Your Age</span>
+            <input type="number" max="60" min="18" name="age" >
+        </label>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" >
+        <br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" >
+        <input type="checkbox" id="showPasswordCheckbox">
+    <label for="showPasswordCheckbox">Show Password</label>
+    <br>
+        <br>
+
+        <input type="submit" value="Register">
+    </form>
+    <script>
+        // Wait for the DOM to be loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the form element
+  const form = document.getElementById('myForm');
+
+  // Function to handle form submission
+  function handleSubmit(event) {
+    {{!-- event.preventDefault();  --}}
+    alert('Registered Successfully!!!');
+    // Add any other logic you want to perform after form submission here
+  }
+
+  // Add a "submit" event listener to the form
+  form.addEventListener('submit', handleSubmit);
+});
+
+
+// Wait for the DOM to be loaded
+document.addEventListener('DOMContentLoaded', function() {
+  const passwordInput = document.getElementById('password');
+  const showPasswordCheckbox = document.getElementById('showPasswordCheckbox');
+
+  // Function to toggle the password visibility
+  function togglePasswordVisibility() {
+    if (showPasswordCheckbox.checked) {
+      passwordInput.setAttribute('type', 'text');
+    } else {
+      passwordInput.setAttribute('type', 'password');
+    }
+  }
+
+  // Add an event listener to the checkbox to toggle password visibility
+  showPasswordCheckbox.addEventListener('change', togglePasswordVisibility);
+});
+
+
+    </script>
+</body>
+</html>
