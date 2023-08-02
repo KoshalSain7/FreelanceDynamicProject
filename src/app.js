@@ -26,7 +26,7 @@ app.use('/static', express.static('public'))
 // Setting the view engine and partials
 app.set('view engine', 'hbs');
 app.set('views', 'views/Partials');
-hbs.registerPartials("views/partials");
+hbs.registerPartials("views/Partials");
 
 
 
