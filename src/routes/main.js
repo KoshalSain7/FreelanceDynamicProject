@@ -121,7 +121,7 @@ routes.post("/register", async (req, res) => {
 
             })
             const registered = await registerEmployee.save();
-            res.status(200).redirect("https://koshalproject.onrender.com/");
+            res.status(200).redirect("/");
 
         } else {
             res.send(" Password And Confirm Password Are Different")
