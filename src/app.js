@@ -32,20 +32,7 @@ hbs.registerPartials("views/Partials");
 
 
 
-// mongoose.connect("mongodb://localhost/website_tut", {
-//     // useCreateIndex: true,
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     family: 4,
 
-// },
-// Detail.create({
-//     brandName:"KS IT Solutions"
-// })).then(() => {
-//     console.log("Connected Successfully")
-// }).catch((err) => {
-//     console.log(err);
-// })
 
 
 
