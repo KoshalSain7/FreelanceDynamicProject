@@ -45,7 +45,7 @@ routes.get('/gallery', async (req, res) => {
     // });
 
 
-//     const API_KEY = '47e8884e4fmsh726953739cfe4cdp157c84jsn33f06552c83a';
+//     const API_KEY = process.env.API_KEY;
 
 //    const response = await axios.get('https://inshortsapi.vercel.app/news?category=sports', {
 //         headers: {
@@ -58,7 +58,7 @@ routes.get('/gallery', async (req, res) => {
 //         console.log(error);
 //     });
 
-// const API_KEY = '47e8884e4fmsh726953739cfe4cdp157c84jsn33f06552c83a';
+// const API_KEY = process.env.API_KEY;
 
 //    const response = await axios.get('https://cyberboysumanjay.herokuapp.com/gaana/populartracks', {
 //         headers: {
@@ -70,7 +70,7 @@ routes.get('/gallery', async (req, res) => {
 //     }).catch((error) => {
 //         console.log(error);
 //     });
-const API_KEY = '47e8884e4fmsh726953739cfe4cdp157c84jsn33f06552c83a';
+const API_KEY = process.env.API_KEY
 // const response = await axios.get('https://sv443.net/jokeapi/v2/joke/Miscellaneous?type=twopart&amount=10', {
    const response = await axios.get('https://sv443.net/jokeapi/v2/joke/coding?type=single', {
    
